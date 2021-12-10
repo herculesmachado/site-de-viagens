@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Site Viagens</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>
+                Hercules Viagens
+            </p>
+            
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Pacotes</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-content">
+            <img src="" alt="">
+            <h1>UNITED STATES</h1>
+            <p>Venha conheçer as beleza desse lugar, o proximo embarque está proximo, junte-se a nós nessa experiência inesquecível.</p>
+            <button>Saiba Mais</button>
+        </div>
+    </header>
+
+    <section class="pacotes">
+
+        <h1 class="pacotes-title">Conheça nossos pacotes</h1>
+
+        <div class="pacotes-cards">
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                     <p>Promoção</p>
+                </div>
+                <div class="card-tag card-tag-botton">
+                    <p>New York, NY, USA</p>
+               </div>
+            
+                <img class="card-image" src="imag/New York - EUA.jpg" alt="New York - USA">
+                <div class="card-content">
+                    <h1>Passagem ida e volta por apenas:</h1>
+                    <ul>
+                        <li> <i data-feather="dollar-sign"></i>Total R$1.500,00</li>
+                        <li> <i data-feather="check-circle"></i>Class Prime</li>
+                        <li> <i data-feather="home"></i>Hotel Five Stars</li>
+                    </ul>
+            
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                     <p>Promoção</p>
+                </div>
+                <div class="card-tag card-tag-botton">
+                    <p>Morro Bay, CA, USA</p>
+               </div>
+            
+                <img class="card-image" src="imag/Morro Bay , CA, USA.jpg" alt="Morro Bay, CA - USA">
+                <div class="card-content">
+                    <h1>Passagem ida e volta por apenas:</h1>
+                    <ul>
+                        <li> <i data-feather="dollar-sign"></i>Total R$2.000,00</li>
+                        <li> <i data-feather="check-circle"></i>Class Prime</li>
+                        <li> <i data-feather="home"></i>Hotel Five Stars</li>
+                    </ul>
+            
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                     <p>Promoção</p>
+                </div>
+                <div class="card-tag card-tag-botton">
+                    <p>Pennsylvania, PA, USA</p>
+               </div>
+            
+                <img class="card-image" src="imag/card 1.jpg" alt="Pennsylvania - USA">
+                <div class="card-content">
+                    <h1>Passagem ida e volta por apenas:</h1>
+                    <ul>
+                        <li> <i data-feather="dollar-sign"></i>Total R$1.7500,00</li>
+                        <li> <i data-feather="check-circle"></i>Class Prime</li>
+                        <li> <i data-feather="home"></i>Hotel Five Stars</li>
+                    </ul>
+            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicos">
+
+        <h1 class="servicos-title">Serviços</h1>
+        
+        <div class="servicos-cards">
+            <div class="card">
+                <i data-feather="map"></i>
+                <div class="card-content">
+                    <h3>Tours guiados</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque praesentium eveniet excepturi provident nihil rerum explicabo esse laboriosam, aut veniam tempore magnam, molestias quia nesciunt necessitatibus obcaecati officia enim.</p>
+                </div>
+                <button>Saiba Mais</button>
+            </div>
+            
+            <div class="card">
+                <i data-feather="camera">Photograph</i>
+                <div class="card-content">
+                    <h3>Tours guiados</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque praesentium eveniet excepturi provident nihil rerum explicabo esse laboriosam, aut veniam tempore magnam, molestias quia nesciunt necessitatibus obcaecati officia enim.</p>
+                </div>
+                <button>Saiba Mais</button>
+            </div>
+
+            <div class="card">
+                <i data-feather="navigation">Aluguel de Veículo</i>
+                
+                <div class="card-content">
+                    <h3>Tours guiados</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque praesentium eveniet excepturi provident nihil rerum explicabo esse laboriosam, aut veniam tempore magnam, molestias quia nesciunt necessitatibus obcaecati officia enim.</p>
+                </div>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato">
+        <div id="map"></div>
+        <div class="contato-card">
+           <h1>Entre em Contato</h1>
+           <ul>
+               <li><i data-feather="navigation"></i>Rua São josé, 548</li>
+               <li><i data-feather="navigation"></i>contato@herculesviagens.com.br</li>
+               <li><i data-feather="navigation"></i>(55)9 9999-9999</li>
+           </ul>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        feather.replace();
+
+        function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+      </script>
+
+        <script
+        src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly"
+        async></script>
+
+      
+
+
+      
+      
+
+</body>
+</html>
